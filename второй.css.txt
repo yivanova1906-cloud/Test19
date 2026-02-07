@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание №2</title>
+    <style> 
+    .super smail{
+font-size: xx-small;
+    }
+    .smail{
+font-size:x-small;
+    }
+    .normai{
+font-size: medium;
+    }
+    .larger{
+font-size: large;
+    }
+    </style>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+<a href="task_main.html">Вернуться к списку заданий</a>
+<p class="red"style="color:rgb(226, 13, 13)">Это красный текст</p>
+<p class="red" style="color:rgb(226, 13, 13)">Это тоже красный текст</p>
+<p class="italic"><b>Это полужирный текст</p></b>
+<p class="bold"><b>Это<i> тоже полужирный</i> текст</p></b>
+<p>Все элементы следующего списка (включая подсписок) имеют разные цвета и ни один из них не чёрный:</p>
+<ul>
+    <li color="green">Элемент списка</li>
+        <ol>
+            <li style=color:blue>Первый элемент подсписка</li>
+            <li style="color:red">Второй элемент подсписка</li>
+        </ol>
+    <li style="color:green">Ещё один элемент списка</li>
+</ul>
+<p><span class="normai">В</span>
+    <span class="super smail">этом</span>
+    <span class="larger">абзаце</span>
+    <span class="smail">все</span>
+    <span class="super smail">слова</span>
+    <span class="larger">разного</span>
+    <span class="normai">размера</span></p>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание №2</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+<a href="task_main.html">Вернуться к списку заданий</a>
+<p class="green">Это красный текст</p>
+<p class="red" style="color:green">Это тоже красный текст</p>
+<p class="italic">Это полужирный текст</p>
+<p class="bold">Это <i>тоже полужирный</i> текст</p>
+<p>Все элементы следующего списка (включая подсписок) имеют разные цвета и ни один из них не чёрный:</p>
+<ul>
+    <li color="green">Элемент списка</li>
+        <ol>
+            <li color="red">Первый элемент подсписка</li>
+            <li style="color:red">Второй элемент подсписка</li>
+        </ol>
+    <li style="color:green">Ещё один элемент списка</li>
+</ul>
+<p><span class="xxsmall">В</span> <span font-size="xsmall">этом</span>
+    <b class="medium">абзаце</b> <span class="xlarge">все</span> <span large>слова</span>
+    <span font="size=small">разного</span> <span size="xxlarge">размера</span></p>
+</body>
+</html>
+
+                             1 ошибка:
+<p class="green">Это красный текст</p>
+Должно быть:
+<p class="red"style="color:rgb(226, 13, 13)">Это красный текст</p>
+
+
+                             2 ошибка:
+
+<p class="red" style="color:green">Это тоже красный текст</p>
+Должно быть:
+
+<p class="red" style="color:rgb(226, 13, 13)">Это тоже красный текст</p>
+
+                              3 ошибка:
+<p class="italic">Это полужирный текст</p>
+Должно быть:
+
+<p class="italic"><b>Это полужирный текст</p></b>
+
+                               4 ОШИБКА:
+<p class="bold">Это <i>тоже полужирный</i> текст</p>
+Должно быть:
+<p class="bold"><b>Это<i> тоже полужирный</i> текст</p></b>
+
+
+                               5 ошибка:
+<li color="red">Первый элемент подсписка</li>
+ 
+Должно быть:
+ <li style=color:blue>Первый элемент подсписка</li>
+
+                               6 ошибка:
+<p><span class="xxsmall">В</span> <span font-size="xsmall">этом</span>
+<b class="medium">абзаце</b> <span class="xlarge">все</span> <span large>слова</span>
+<span font="size=small">разного</span> <span size="xxlarge">размера</span></p>
+
+ нужно в стили добавить шрифты. и прописать их к каждому слову.
+
+                              Должно быть:
+   <title>Задание №2</title>
+    <style> 
+    .super smail{
+font-size: xx-small;
+    }
+    .smail{
+font-size:x-small;
+    }
+    .normai{
+font-size: medium;
+    }
+    .larger{
+font-size: large;
+    }
+    </style>
+
+p><span class="normai">В</span>
+    <span class="super smail">этом</span>
+    <span class="larger">абзаце</span>
+    <span class="smail">все</span>
+    <span class="super smail">слова</span>
+    <span class="larger">разного</span>
+    <span class="normai">размера</span></p>

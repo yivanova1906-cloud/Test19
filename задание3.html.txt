@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание №3*</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+<a href="task_main.html">Вернуться к списку заданий</a>
+<p class="red" style="color:blue">Это красный текст</p>
+<p class="green" style="color:red">Это зелёный текст</p>
+<p class="italic">Этот текст написан курсивом</p>
+<p class="bold">Это <i>полужирный</i> текст</p>
+<ul>
+    <li class="green" style="color:red">Этот элемент списка зелёный</li>
+    <ol>
+        <li class="red" style="color:blue">Этот элемент подсписка красный</li>
+        <li class="blue">Этот элемент подсписка синий</li>
+    </ol>
+</ul>
+</body>
+</html>
+
+      1 ошибка:
+<p class="red" style="color:blue">Это красный текст</p>
+Должно быть:
+<p class style="color:red">Это красный текст</p>
+
+
+         2 ошибка:
+
+<p class="green" style="color:red">Это зелёный текст</p>
+Должно быть:
+
+<p class style="color:green">Это зелёный текст</p>
+
+         3 ошибка:
+<p class="italic">Этот текст написан курсивом</p>
+Должно быть:
+
+<p class="italic"><i>Этот текст написан курсивом</I></p>
+
+         4 ошибка:
+<p class="bold">Это <i>полужирный</i> текст</p>
+ 
+Должно быть:
+<p class="bold"><b>Это полужирный текст</p></b>
+
+         5 ошибка:
+<li class="green" style="color:red">Этот элемент списка зелёный</li>
+
+Должно быть:
+ <li class style="color:green">Этот элемент списка зелёный</li>
+
+         6 ошибка:
+<li class="red" style="color:blue">Этот элемент подсписка красный</li>
+ должно быть:
+<li class style="color:red">Этот элемент подсписка красный</li>
+
+         7 ошибка:
+ <li class="blue">Этот элемент подсписка синий</li>
+ должно быть:
+ <li lass style="color:blue">Этот элемент подсписка синий</li>
+
